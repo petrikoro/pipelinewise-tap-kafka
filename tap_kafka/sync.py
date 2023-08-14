@@ -115,8 +115,9 @@ def init_kafka_consumer(kafka_config):
         # Required parameters
         'bootstrap.servers': kafka_config['bootstrap_servers'],
         'group.id': kafka_config['group_id'],
-        'sasl.jaas.config': "org.apache.kafka.common.security.scram.ScramLoginModule required username='kafka-default' password='12345678';",
-        'security.protocol': 'SASL_SSL',
+        'sasl.username': 'kafka-default',
+        'sasl.password': '12345678',
+        'security.protocol': 'sasl_plaintext',
         'sasl.mechanism': 'SCRAM-SHA-512',
 
         # Optional parameters
