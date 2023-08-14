@@ -117,7 +117,7 @@ def init_kafka_consumer(kafka_config):
         'group.id': kafka_config['group_id'],
         'sasl.username': 'kafka-default',
         'sasl.password': '12345678',
-        'security.protocol': 'sasl_plaintext',
+        'security.protocol': 'sasl_ssl',
         'sasl.mechanism': 'SCRAM-SHA-512',
 
         # Optional parameters
