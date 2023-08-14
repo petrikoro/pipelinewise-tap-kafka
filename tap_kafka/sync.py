@@ -118,7 +118,7 @@ def init_kafka_consumer(kafka_config):
         'security.protocol': 'SASL_PLAINTEXT',
         'sasl.mechanism': 'SCRAM-SHA-512',
         'sasl.username': 'kafka-default',
-        'sasl.password': '12345678'
+        'sasl.password': '12345678',
 
         # Optional parameters
         'session.timeout.ms': kafka_config['session_timeout_ms'],
